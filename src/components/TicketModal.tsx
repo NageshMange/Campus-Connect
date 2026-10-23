@@ -36,9 +36,16 @@ export const TicketModal: React.FC<TicketModalProps> = ({ registration, isOpen, 
         {/* Pass Header */}
         <div className="bg-slate-900 text-white p-5 relative">
           <div className="flex items-center justify-between">
-            <span className="text-[10px] tracking-widest font-mono uppercase text-slate-300">
-              CampusConnect Verified Pass
-            </span>
+            <div className="flex items-center gap-2">
+              <img
+                src="/assets/aistudio/ap1_3c1c1923.jpg"
+                alt="APCOER Logo"
+                className="w-7 h-8 object-contain rounded bg-white p-0.5"
+              />
+              <span className="text-[10px] tracking-widest font-mono uppercase text-slate-300">
+                APCOER Verified Pass
+              </span>
+            </div>
             <button
               onClick={onClose}
               className="text-slate-400 hover:text-white rounded-lg p-1"

@@ -121,26 +121,33 @@ export const AuthModal: React.FC<AuthModalProps> = ({
       <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full border border-slate-200 overflow-hidden transition-all">
         {/* Top Header */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-slate-200 bg-slate-50">
-          <div>
-            <div className="flex items-center gap-2">
-              {mode === 'admin' ? (
-                <ShieldCheck className="w-5 h-5 text-indigo-600" />
-              ) : null}
-              <h2 className="text-base font-bold text-slate-900">
+          <div className="flex items-center gap-3">
+            <img
+              src="/assets/aistudio/ap1_3c1c1923.jpg"
+              alt="APCOER Logo"
+              className="w-10 h-11 object-contain rounded-lg border border-slate-200 bg-white p-0.5 shadow-2xs shrink-0"
+            />
+            <div>
+              <div className="flex items-center gap-2">
+                {mode === 'admin' ? (
+                  <ShieldCheck className="w-4 h-4 text-indigo-600" />
+                ) : null}
+                <h2 className="text-base font-bold text-slate-900 leading-tight">
+                  {mode === 'register'
+                    ? 'Create CampusConnect Account'
+                    : mode === 'admin'
+                    ? 'APCOER Admin Portal'
+                    : 'Sign in to CampusConnect'}
+                </h2>
+              </div>
+              <p className="text-[11px] text-slate-500 mt-0.5">
                 {mode === 'register'
-                  ? 'Create CampusConnect Account'
+                  ? 'Student & Faculty Organizer Registration'
                   : mode === 'admin'
-                  ? 'APCOER Institutional Admin Portal'
-                  : 'Sign in to CampusConnect'}
-              </h2>
+                  ? 'Sign in with administrative credentials'
+                  : 'APCOER Pune · Institutional Portal'}
+              </p>
             </div>
-            <p className="text-xs text-slate-500 mt-0.5">
-              {mode === 'register'
-                ? 'Student & Faculty Organizer Registration'
-                : mode === 'admin'
-                ? 'Sign in with administrative credentials'
-                : 'Enter your institutional email & password'}
-            </p>
           </div>
           <button
             onClick={onClose}

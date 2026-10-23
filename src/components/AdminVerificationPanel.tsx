@@ -325,23 +325,30 @@ export const AdminVerificationPanel: React.FC<AdminVerificationPanelProps> = ({
       {/* Institutional Top Header */}
       <div className="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-xs relative overflow-hidden">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div className="space-y-1.5">
-            <div className="flex items-center gap-2">
-              <span className="p-1.5 bg-indigo-50 text-indigo-700 rounded-lg border border-indigo-200">
-                <ShieldCheck className="w-5 h-5 text-indigo-700" />
-              </span>
-              <span className="text-xs font-bold uppercase tracking-wider text-indigo-700">
-                APCOER Institutional Administration
-              </span>
+          <div className="flex items-start gap-4">
+            <img
+              src="/assets/aistudio/ap1_3c1c1923.jpg"
+              alt="APCOER Logo"
+              className="w-14 h-16 object-contain rounded-xl border border-slate-200 bg-white p-1 shadow-xs shrink-0"
+            />
+            <div className="space-y-1.5">
+              <div className="flex items-center gap-2">
+                <span className="p-1 bg-indigo-50 text-indigo-700 rounded-lg border border-indigo-200">
+                  <ShieldCheck className="w-4 h-4 text-indigo-700" />
+                </span>
+                <span className="text-xs font-bold uppercase tracking-wider text-indigo-700">
+                  APCOER Institutional Administration
+                </span>
+              </div>
+
+              <h1 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
+                Administrative Control & Accreditation Center
+              </h1>
+
+              <p className="text-xs text-slate-600 max-w-2xl">
+                Anantrao Pawar College of Engineering & Research, Pune · Institutional workflow governance for event approvals, student and organizer verification, NBA/NAAC compliance, and official record audits.
+              </p>
             </div>
-
-            <h1 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
-              Administrative Control & Accreditation Center
-            </h1>
-
-            <p className="text-xs text-slate-600 max-w-2xl">
-              Anantrao Pawar College of Engineering & Research, Pune · Institutional workflow governance for event approvals, student and organizer verification, NBA/NAAC compliance, and official record audits.
-            </p>
           </div>
 
           <div className="flex items-center gap-2 self-start md:self-auto">

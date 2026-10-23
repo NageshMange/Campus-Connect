@@ -70,8 +70,12 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={() => onSelectTab('events')}
             className="flex items-center gap-2.5 text-left group cursor-pointer focus:outline-hidden"
           >
-            <div className="w-9 h-9 rounded-lg bg-blue-700 text-white flex items-center justify-center font-bold text-base shadow-xs group-hover:bg-blue-800 transition-colors">
-              <Building className="w-5 h-5 text-white" />
+            <div className="w-10 h-11 flex items-center justify-center p-0.5 bg-white rounded-lg border border-slate-200 shadow-2xs group-hover:border-blue-400 transition-colors shrink-0 overflow-hidden">
+              <img
+                src="/assets/aistudio/ap1_3c1c1923.jpg"
+                alt="APCOER Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div>
               <div className="text-base font-extrabold tracking-tight text-slate-900 group-hover:text-blue-700 transition-colors flex items-center gap-1.5">
@@ -297,6 +301,17 @@ export const Navbar: React.FC<NavbarProps> = ({
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden border-t border-slate-200 bg-white px-4 py-3 space-y-2 text-xs font-medium">
+          <div className="flex items-center gap-2.5 pb-2 mb-1 border-b border-slate-100">
+            <img
+              src="/assets/aistudio/ap1_3c1c1923.jpg"
+              alt="APCOER Logo"
+              className="w-8 h-9 object-contain rounded border border-slate-200 p-0.5"
+            />
+            <div>
+              <div className="font-bold text-slate-900 text-xs">CampusConnect APCOER</div>
+              <div className="text-[10px] text-slate-500">Anantrao Pawar College of Engg & Research</div>
+            </div>
+          </div>
           <button
             onClick={() => {
               onSelectTab('events');

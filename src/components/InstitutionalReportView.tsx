@@ -126,18 +126,18 @@ export const InstitutionalReportView: React.FC<InstitutionalReportViewProps> = (
         {/* Institutional Header Table */}
         <div className="border border-slate-800 mb-6">
           <div className="grid grid-cols-12 items-center divide-x divide-slate-800">
-            {/* Left Emblem */}
+            {/* Left APCOER Official Logo */}
             <div className="col-span-2 p-2 flex flex-col items-center justify-center">
               <img
-                src="/src/assets/images/college_emblem_1790754809679.jpg"
-                alt="College Crest"
-                className="w-16 h-16 object-contain"
+                src="/assets/aistudio/ap1_3c1c1923.jpg"
+                alt="APCOER Logo"
+                className="w-16 h-20 object-contain"
                 onError={(e) => {
                   (e.target as HTMLElement).style.display = 'none';
                 }}
               />
-              <span className="text-[8px] font-bold text-center mt-1 uppercase">
-                ABMSP
+              <span className="text-[9px] font-bold text-center mt-0.5 uppercase tracking-wider text-slate-800">
+                APCOER
               </span>
             </div>
 
@@ -169,18 +169,18 @@ export const InstitutionalReportView: React.FC<InstitutionalReportViewProps> = (
               </div>
             </div>
 
-            {/* Right Founder Photo */}
+            {/* Right Side APCOER Seal */}
             <div className="col-span-2 p-2 flex flex-col items-center justify-center">
               <img
-                src="/src/assets/images/founder_portrait_1790754859861.jpg"
-                alt="Founder"
-                className="w-16 h-16 object-cover rounded-full border border-slate-300"
+                src="/assets/aistudio/ap1_3c1c1923.jpg"
+                alt="APCOER Pune"
+                className="w-16 h-20 object-contain"
                 onError={(e) => {
                   (e.target as HTMLElement).style.display = 'none';
                 }}
               />
-              <span className="text-[9px] font-bold text-center mt-1">
-                APCOER PUNE
+              <span className="text-[9px] font-bold text-center mt-0.5 uppercase tracking-wider text-slate-800">
+                PUNE
               </span>
             </div>
           </div>

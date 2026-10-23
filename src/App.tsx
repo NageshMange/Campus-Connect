@@ -189,9 +189,16 @@ function CampusConnectApp() {
         {currentTab === 'events' && (
           <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-xs relative overflow-hidden">
             <div className="max-w-3xl space-y-3 relative z-10">
-              <div className="flex items-center gap-2 text-xs font-semibold text-blue-700 bg-blue-50 px-3 py-1 rounded-full w-fit border border-blue-200/60">
-                <Building className="w-3.5 h-3.5" />
-                <span>APCOER Pune · Smart College Event Management System</span>
+              <div className="flex flex-wrap items-center gap-3">
+                <img
+                  src="/assets/aistudio/ap1_3c1c1923.jpg"
+                  alt="APCOER Logo"
+                  className="w-12 h-14 object-contain rounded-lg border border-slate-200 bg-white p-1 shadow-xs"
+                />
+                <div className="flex items-center gap-2 text-xs font-semibold text-blue-700 bg-blue-50 px-3 py-1 rounded-full border border-blue-200/60">
+                  <Building className="w-3.5 h-3.5" />
+                  <span>APCOER Pune · Smart College Event Management System</span>
+                </div>
               </div>
 
               <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
@@ -255,12 +262,12 @@ function CampusConnectApp() {
               </div>
             </div>
 
-            {/* Subtle background crest illustration */}
-            <div className="absolute right-4 bottom-2 opacity-15 pointer-events-none hidden md:block">
+            {/* Subtle background APCOER logo watermark */}
+            <div className="absolute right-4 bottom-2 opacity-20 pointer-events-none hidden md:block">
               <img
-                src="/src/assets/images/college_emblem_1790754809679.jpg"
-                alt="Watermark Crest"
-                className="w-48 h-48 object-contain"
+                src="/assets/aistudio/ap1_3c1c1923.jpg"
+                alt="APCOER Crest Watermark"
+                className="w-44 h-52 object-contain"
               />
             </div>
           </div>
