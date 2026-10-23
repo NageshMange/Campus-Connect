@@ -1,0 +1,6 @@
+{
+  "name": "CampusConnect - Smart College Event Management System",
+  "description": "Smart College Event Management System with automated institutional report generation, QR attendance, feedback analytics, and multi-role verification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

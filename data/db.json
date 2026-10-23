@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "_id": "usr_admin_1",
+      "name": "Dr. Sunil Thakare (Principal / Admin)",
+      "email": "admin@apcoer.edu.in",
+      "role": "admin",
+      "department": "Administration",
+      "designation": "Principal & Chief Administrator",
+      "verified": true,
+      "createdAt": "2025-01-15T08:00:00.000Z"
+    }
+  ],
+  "events": [],
+  "registrations": [],
+  "feedbacks": [],
+  "reports": [],
+  "notifications": [
+    {
+      "_id": "notif_welcome",
+      "userId": "ALL",
+      "title": "Welcome to CampusConnect APCOER",
+      "message": "APCOER centralized college event and activity management system.",
+      "type": "event_announced",
+      "read": false,
+      "createdAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "passwordMap": {
+    "admin@apcoer.edu.in": "$2b$08$dK0e8lPBv9H7LBfO2s5Uz.M3gRbiIBsUeU.f9dn5uWnl2cOKtr.iq"
+  }
+}
